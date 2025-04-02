@@ -1,0 +1,103 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #555;
+  --border: #cccccc;
+  --highlight: #e0e0e0;
+}
+
+body.dark {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #aaa;
+  --border: #444;
+  --highlight: #222;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: var(--muted);
+}
+
+#theme-toggle {
+  margin-top: 15px;
+  padding: 6px 12px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+}
+
+article h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+article h3 {
+  margin-top: 30px;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+sup {
+  font-size: 0.75em;
+  vertical-align: super;
+  cursor: pointer;
+}
+
+.footnotes {
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.footnotes h4 {
+  margin-bottom: 10px;
+}
+
+.floating-quote {
+  margin: 30px auto;
+  padding: 20px;
+  border-left: 4px solid var(--text);
+  font-style: italic;
+  background-color: var(--highlight);
+  max-width: 600px;
+}
+  
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: var(--muted);
+}
