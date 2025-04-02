@@ -1,125 +1,133 @@
 :root {
-    --bg: #ffffff;
-    --text: #000000;
-    --accent: #000000;
-    --muted: #666666;
-    --card: #ffffff;
-  }
-  
-  body.dark {
-    --bg: #000000;
-    --text: #ffffff;
-    --accent: #ffffff;
-    --muted: #999999;
-    --card: #000000;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-  }
-  
-  .hero {
-    position: relative;
-    text-align: center;
-    color: var(--text);
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.3;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
-    padding: 1rem 2rem;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .hero-text p {
-    font-size: 1.2rem;
-    color: var(--muted);
-  }
-  
-  #theme-toggle {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: none;
-    border: 1px solid var(--text);
-    color: var(--text);
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-  }
-  
-  article h2 {
-    font-size: 2rem;
-    color: var(--accent);
-  }
-  
-  .meta {
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-  }
-  
-  h3 {
-    margin-top: 2rem;
-    font-size: 1.3rem;
-  }
-  
-  p {
-    margin-bottom: 1.5rem;
-  }
-  
-  .inline-img {
-    width: 100%;
-    margin: 2rem 0;
-    border: 1px solid var(--muted);
-  }
-  
-  .floating-quote {
-    margin: 2rem 0;
-    padding: 1rem 1.5rem;
-    border-left: 4px solid var(--accent);
-    background: var(--card);
-    font-style: italic;
-  }
-  
-  .footnotes {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--text);
-  }
-  
-  .footnotes h4 {
-    margin-bottom: 0.5rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 2rem;
-    color: var(--muted);
-    border-top: 1px solid var(--text);
-  }
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #000000;
+  --muted: #666666;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #000000;
+  --text: #ffffff;
+  --accent: #ffffff;
+  --muted: #999999;
+  --card: #000000;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem 2rem;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+#theme-toggle {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid var(--text);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+article h2 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.inline-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem 0;
+  border: 1px solid var(--muted);
+}
+
+.floating-quote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--accent);
+  background: var(--card);
+  font-style: italic;
+}
+
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--text);
+}
+
+.footnotes h4 {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  border-top: 1px solid var(--text);
+}
